@@ -19,6 +19,7 @@ import {
   Quote,
   Zap,
   Shield,
+  ExternalLink,
 } from "lucide-react";
 
 const gradeTimelines = [
@@ -50,12 +51,21 @@ const holdTypes = [
 ];
 
 const movementSkills = [
-  { name: "Flagging", description: "Extending a leg as a counterbalance to prevent barn-dooring. Keep the flagging leg straight and press against the wall." },
-  { name: "Drop Knees", description: "Rotating one knee downward while the hip turns into the wall. Use outside edge on your foot and sink your hip in for massive extra reach." },
-  { name: "Heel & Toe Hooks", description: "Using feet to pull your body toward the wall. For heel hooks, point toes away to lock the heel in. For toe hooks, engage shin muscles." },
-  { name: "Deadpointing", description: "Moving dynamically but catching the hold at the exact moment your upward momentum stops — the 'dead point.'" },
-  { name: "Backstepping", description: "Using the outside edge of your shoe to turn your hip into the wall. Creates extra reach and better body positioning." },
+  { name: "Flagging", description: "Extending a leg as a counterbalance to prevent barn-dooring. Keep the flagging leg straight and press against the wall.", tutorial: "https://www.youtube.com/watch?v=ts2jrYSsisA", tutorialLabel: "Neil Gresham: Flagging" },
+  { name: "Drop Knees", description: "Rotating one knee downward while the hip turns into the wall. Use outside edge on your foot and sink your hip in for massive extra reach.", tutorial: "https://www.youtube.com/watch?v=2HmQ27XEipg", tutorialLabel: "Neil Gresham: Drop Knee" },
+  { name: "Heel & Toe Hooks", description: "Using feet to pull your body toward the wall. For heel hooks, point toes away to lock the heel in. For toe hooks, engage shin muscles.", tutorial: "https://www.youtube.com/watch?v=5GmRGlVqTlY", tutorialLabel: "Neil Gresham: Toe Hook" },
+  { name: "Deadpointing", description: "Moving dynamically but catching the hold at the exact moment your upward momentum stops — the 'dead point.'", tutorial: "https://www.youtube.com/watch?v=cre_htAhJh4", tutorialLabel: "Mani the Monkey: Deadpointing" },
+  { name: "Backstepping", description: "Using the outside edge of your shoe to turn your hip into the wall. Creates extra reach and better body positioning.", tutorial: "https://www.youtube.com/watch?v=UZlGKEs31Cc", tutorialLabel: "Neil Gresham: Outside Edge" },
 ];
+
+const footworkSkills = [
+  { name: "Edging", description: "Using the inside edge of your big toe on small chips. Precision placement is key." },
+  { name: "Smearing", description: "Pressing the flat rubber of your shoe against a featureless wall. Trust the friction." },
+  { name: "Backstepping", description: "Using the outside edge of your shoe to turn your hip in for extra reach." },
+];
+
+const footworkTutorial = { url: "https://www.youtube.com/watch?v=dRSWZ6KTow4", label: "Neil Gresham: Footwork Masterclass" };
+const bodyPositionTutorial = { url: "https://www.youtube.com/watch?v=SPyzeEvT5QQ", label: "Lattice Training: Body Positioning" };
 
 const proQuotes = [
   { quote: "How you use your feet is actually more important than being strong.", author: "Anderson Brothers" },
@@ -193,8 +203,65 @@ export default function Tips() {
                   {skill.name}
                 </h3>
                 <p className="text-xs text-foreground/70 mt-1 leading-relaxed">{skill.description}</p>
+                {skill.tutorial && (
+                  <a
+                    href={skill.tutorial}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 mt-2 text-[11px] font-medium text-orange hover:text-orange/80 transition-colors"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    {skill.tutorialLabel}
+                  </a>
+                )}
               </div>
             ))}
+          </div>
+
+          {/* Footwork sub-section */}
+          <div className="mt-4 bg-card border border-border/50 rounded-lg p-4">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="font-display font-semibold text-sm text-foreground">Footwork Fundamentals</h3>
+              <a
+                href={footworkTutorial.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[11px] font-medium text-orange hover:text-orange/80 transition-colors"
+              >
+                <ExternalLink className="w-3 h-3" />
+                {footworkTutorial.label}
+              </a>
+            </div>
+            <div className="space-y-2">
+              {footworkSkills.map((skill, i) => (
+                <div key={i} className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-orange mt-1.5 shrink-0" />
+                  <div>
+                    <span className="font-display font-semibold text-xs text-foreground">{skill.name}: </span>
+                    <span className="text-xs text-foreground/70">{skill.description}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Body Positioning sub-section */}
+          <div className="mt-3 bg-card border border-border/50 rounded-lg p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <h3 className="font-display font-semibold text-sm text-foreground">Body Positioning</h3>
+                <p className="text-xs text-foreground/70 mt-1">Keep weight over feet. Straight arms as "hooks." Turn hip into wall for extra 2-3 inches of reach.</p>
+              </div>
+              <a
+                href={bodyPositionTutorial.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 text-[11px] font-medium text-orange hover:text-orange/80 transition-colors shrink-0 ml-3"
+              >
+                <ExternalLink className="w-3 h-3" />
+                {bodyPositionTutorial.label}
+              </a>
+            </div>
           </div>
         </motion.section>
 
