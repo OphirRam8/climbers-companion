@@ -76,11 +76,11 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative h-[70vh] min-h-[480px] overflow-hidden">
+      <div className="relative h-[55vh] min-h-[380px] overflow-hidden">
         <img
           src={HERO_IMG}
           alt="Indoor bouldering gym"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-[center_60%]"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/60 to-background" />
         

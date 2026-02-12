@@ -1,6 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
+import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -11,6 +12,14 @@ import Frameworks from "./pages/Frameworks";
 import FrameworkDetail from "./pages/FrameworkDetail";
 import Mindset from "./pages/Mindset";
 import Tips from "./pages/Tips";
+
+function ScrollToTop() {
+  const [location] = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  return null;
+}
 
 function Router() {
   return (
@@ -39,6 +48,7 @@ function App() {
         <TooltipProvider>
           <Toaster />
           <div className="grain-overlay" />
+          <ScrollToTop />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
