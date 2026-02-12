@@ -56,6 +56,8 @@ const movementSkills = [
   { name: "Heel & Toe Hooks", description: "Using feet to pull your body toward the wall. For heel hooks, point toes away to lock the heel in. For toe hooks, engage shin muscles.", tutorial: "https://www.youtube.com/watch?v=5GmRGlVqTlY", tutorialLabel: "Neil Gresham: Toe Hook" },
   { name: "Deadpointing", description: "Moving dynamically but catching the hold at the exact moment your upward momentum stops — the 'dead point.'", tutorial: "https://www.youtube.com/watch?v=cre_htAhJh4", tutorialLabel: "Mani the Monkey: Deadpointing" },
   { name: "Backstepping", description: "Using the outside edge of your shoe to turn your hip into the wall. Creates extra reach and better body positioning.", tutorial: "https://www.youtube.com/watch?v=UZlGKEs31Cc", tutorialLabel: "Neil Gresham: Outside Edge" },
+  { name: "Dynos", description: "Full-body leaps where you leave the wall entirely. Requires explosive power from the hips and precise timing to latch the target hold.", tutorial: "https://www.youtube.com/watch?v=cre_htAhJh4", tutorialLabel: "Mani the Monkey: Dynamic Movement" },
+  { name: "Static vs. Dynamic", description: "Knowing when to move slow (3 points of contact, controlled) vs. when to explode (deadpoints, dynos). At V4+, reading this correctly is the difference.", tutorial: "https://www.youtube.com/watch?v=nkfUqdr-0zk", tutorialLabel: "Neil Gresham: Technique & Training" },
 ];
 
 const footworkSkills = [
@@ -386,23 +388,31 @@ export default function Tips() {
           </h2>
           <div className="grid gap-2">
             {[
-              { name: "Neil Gresham Climbing", desc: "The gold standard for technique" },
-              { name: "Lattice Training", desc: "Science-based training and drills" },
-              { name: "Mani the Monkey", desc: "Beginner to intermediate movement breakdowns" },
-              { name: "Hooper's Beta", desc: "Injury prevention and hold tutorials" },
+              { name: "Neil Gresham Climbing", desc: "The gold standard for technique", url: "https://www.youtube.com/@NeilGreshamClimbingMasterclass" },
+              { name: "Lattice Training", desc: "Science-based training and drills", url: "https://www.youtube.com/@latticetraining" },
+              { name: "Mani the Monkey", desc: "Beginner to intermediate movement breakdowns", url: "https://www.youtube.com/@ManitheMonkey" },
+              { name: "Hooper's Beta", desc: "Injury prevention and hold tutorials", url: "https://www.youtube.com/@HoopersBeta" },
             ].map((channel, i) => (
-              <div
+              <a
                 key={i}
-                className="bg-card border border-border/50 rounded-lg p-3 flex items-center gap-3"
+                href={channel.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card border border-border/50 rounded-lg p-3 flex items-center gap-3 hover:border-orange/30 hover:bg-card/80 transition-all duration-200 group"
               >
-                <div className="w-2 h-2 rounded-full bg-orange/60 shrink-0" />
-                <div>
-                  <h3 className="font-display font-semibold text-sm text-foreground">
+                <div className="w-8 h-8 rounded-md bg-red-600/20 flex items-center justify-center shrink-0">
+                  <svg className="w-4 h-4 text-red-500" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                  </svg>
+                </div>
+                <div className="flex-1 min-w-0">
+                  <h3 className="font-display font-semibold text-sm text-foreground group-hover:text-orange transition-colors">
                     {channel.name}
                   </h3>
                   <p className="text-xs text-muted-foreground">{channel.desc}</p>
                 </div>
-              </div>
+                <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-orange transition-colors shrink-0" />
+              </a>
             ))}
           </div>
         </motion.section>
