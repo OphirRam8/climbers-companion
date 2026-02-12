@@ -48,7 +48,7 @@ export default function Layout({ children }: LayoutProps) {
             </span>
           </Link>
           <a
-            href="https://www.notion.so/ophir-ram/3026780ba3928052a949c9377da2abcb?v=3026780ba3928035a17a000c13e1f251"
+            href="https://www.notion.so/ophir-ram/3026780ba3928052a949c9377da2abcb?v=3026780ba3928035a17a000c13e1f251&source=copy_link"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-3 py-1.5 rounded-md bg-orange/15 border border-orange/30 text-orange text-sm font-medium hover:bg-orange/25 transition-colors"

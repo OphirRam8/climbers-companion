@@ -28,15 +28,18 @@ export default function Drills() {
   const [activeCategory, setActiveCategory] = useState<DrillCategory | null>(null);
 
   const filtered = useMemo(() => {
-    return drills.filter((drill) => {
-      const matchesSearch =
-        search === "" ||
-        drill.name.toLowerCase().includes(search.toLowerCase()) ||
-        drill.focus.toLowerCase().includes(search.toLowerCase()) ||
-        drill.description.toLowerCase().includes(search.toLowerCase());
-      const matchesCategory = !activeCategory || drill.category === activeCategory;
-      return matchesSearch && matchesCategory;
-    });
+    const difficultyOrder: Record<string, number> = { beginner: 0, intermediate: 1, advanced: 2 };
+    return drills
+      .filter((drill) => {
+        const matchesSearch =
+          search === "" ||
+          drill.name.toLowerCase().includes(search.toLowerCase()) ||
+          drill.focus.toLowerCase().includes(search.toLowerCase()) ||
+          drill.description.toLowerCase().includes(search.toLowerCase());
+        const matchesCategory = !activeCategory || drill.category === activeCategory;
+        return matchesSearch && matchesCategory;
+      })
+      .sort((a, b) => (difficultyOrder[a.difficulty] ?? 1) - (difficultyOrder[b.difficulty] ?? 1));
   }, [search, activeCategory]);
 
   return (

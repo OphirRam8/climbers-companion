@@ -41,12 +41,12 @@ const commonMistakes = [
 ];
 
 const holdTypes = [
-  { name: "Jugs", tip: "Keep arms straight. Use them to rest and shake out.", difficulty: "VB+" },
-  { name: "Crimps", tip: "Use Half-Crimp (90° bend) to protect tendons. Avoid Full Crimp.", difficulty: "V3+" },
-  { name: "Slopers", tip: "Keep hips low. Maximize hand surface contact.", difficulty: "V3+" },
-  { name: "Pinches", tip: "Engage your thumb — it's your strongest digit for these.", difficulty: "V4+" },
-  { name: "Pockets", tip: "Use middle and ring fingers. Keep them aligned.", difficulty: "V4+" },
-  { name: "Volumes", tip: "Use smearing with palms and feet on flat sides.", difficulty: "V2+" },
+  { name: "Jugs", tip: "Keep arms straight. Use them to rest and shake out.", difficulty: "VB+", image: "https://private-us-east-1.manuscdn.com/sessionFile/wdjwTTmoCxr61Jk59rmcmy/sandbox/oEsNDln6sKUs5cnMWkkuxt-img-1_1770859310000_na1fn_aG9sZC1qdWdz.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvd2Rqd1RUbW9DeHI2MUprNTlybWNteS9zYW5kYm94L29Fc05EbG42c0tVczVjbk1Xa2t1eHQtaW1nLTFfMTc3MDg1OTMxMDAwMF9uYTFmbl9hRzlzWkMxcWRXZHoucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=Jl7IqbztDjeVfBeUi8xNpuICxqHIREN1ooJ4rPZSsoh9MIN8ib5NapTCccVNYlh5QZHxFv6lU-8gTeUIEBUGBtHt679ZefTcoEvNrUl~Vy0KueTXBXodNEfMcWad4H4d8rS45UbE8X3uaQ5e~YUFPcso9GQe3jyqLibNvegRCg0KHl~dTe7gjQ3yAuwF6WGqWxt70ADiEXSARORh4ylBKGSVC13XugMkSl4PDnt0rKje87YxIhylfpjZfCq3vlqND8P-et2XsCfU5rmPQCdPAY-0qozrC6wZPp1cLp36iA2liZy3YvCRz3K3lhQe02MzPOSnEifGyh1C8BQkcPbOTQ__" },
+  { name: "Crimps", tip: "Use Half-Crimp (90° bend) to protect tendons. Avoid Full Crimp.", difficulty: "V3+", image: "https://private-us-east-1.manuscdn.com/sessionFile/wdjwTTmoCxr61Jk59rmcmy/sandbox/oEsNDln6sKUs5cnMWkkuxt-img-2_1770859313000_na1fn_aG9sZC1jcmltcHM.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvd2Rqd1RUbW9DeHI2MUprNTlybWNteS9zYW5kYm94L29Fc05EbG42c0tVczVjbk1Xa2t1eHQtaW1nLTJfMTc3MDg1OTMxMzAwMF9uYTFmbl9hRzlzWkMxamNtbHRjSE0ucG5nP3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0_&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=au7KYe4lE~0rAM7aNeMAJi1iQ4agYYJyJDVlb9xNMV1-d4egKrMY3lPvUlsn4-Hhvz53QsLHH6Tt7mAlYiwUPvFy1jBbeO-IGv9M7yqF1ZcEcK1LVN0D87rsYgNvHmG-NfwnpHi2iCFhL~xeGtD8pgHcUAMevbSj-FXVvWYLbcICFjlWvHhT8CZ4AOtpug~ACCZw~EOI5ziBoBSXeXEju3~cPE6fW32wb2lBPVHpiUhHbqFO-DtdhiN1ULmqo2d45rjUr0h2dPmIWZAnW6IocmV6RpBVfkkoYxG~a1rYQ-LxAEFMcsLI9lzXa1~wJ3JEsrxixR2KFkcb5RZZuwjiFg__" },
+  { name: "Slopers", tip: "Keep hips low. Maximize hand surface contact.", difficulty: "V3+", image: "https://private-us-east-1.manuscdn.com/sessionFile/wdjwTTmoCxr61Jk59rmcmy/sandbox/oEsNDln6sKUs5cnMWkkuxt-img-3_1770859317000_na1fn_aG9sZC1zbG9wZXJz.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvd2Rqd1RUbW9DeHI2MUprNTlybWNteS9zYW5kYm94L29Fc05EbG42c0tVczVjbk1Xa2t1eHQtaW1nLTNfMTc3MDg1OTMxNzAwMF9uYTFmbl9hRzlzWkMxemJHOXdaWEp6LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=b5suTmgRs-KwkJvpmnz7mi2lBGK~cPqNpb4aS5pmZkqZxea3tQWywT3MUSr-6pimi7hFH4epp5sz2s0hUrx4yz4fDife6Ws5JqekgXnTUajanr0DUsKc-hzn7~mOrHMeF0ZQKW0Na1AigClM~GBWON4HyiSMa4QWiINnae77VPR4lAxb5639RraHNtyFQNeWWNFBor93aIFvRG6EdDOwiS5yieIxfKU0pHGtgXI4zjnxnG09CYzxkPBe3AarpmmV6HhcqoRm2KEgtVcb42-dXyr18pp-faGW03iygsavGFdbs5Z2gcg5mEmzC-DFqxAN4kfejx4UKj49D2mRjebE2g__" },
+  { name: "Pinches", tip: "Engage your thumb — it's your strongest digit for these.", difficulty: "V4+", image: "https://private-us-east-1.manuscdn.com/sessionFile/wdjwTTmoCxr61Jk59rmcmy/sandbox/oEsNDln6sKUs5cnMWkkuxt-img-4_1770859313000_na1fn_aG9sZC1waW5jaGVz.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvd2Rqd1RUbW9DeHI2MUprNTlybWNteS9zYW5kYm94L29Fc05EbG42c0tVczVjbk1Xa2t1eHQtaW1nLTRfMTc3MDg1OTMxMzAwMF9uYTFmbl9hRzlzWkMxd2FXNWphR1Z6LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=q9p-7XYAyUeVXobG9sMATVHo11lOkylLigDCzI0lzCO6bhFEEfn9Q5RcXPGzapj1dLV7wb1jKG1EovOIboglk91T6T1qkWscpMWtKjzUJY7tTJ6ag-Syk8ILxQsAKJPxWKHpX9umO6lZfd~BbkOyJoAkH3Zwl~YLqDcn7cyrcGmPXdw4yoYh8HJS7ruhq6Y7tsPs169Wm9Ijp5a3B56tOuK2v008B3t8rzVuPTMUOdIIKKoBBB60~1g-xpkU6q3nTUbyex1IQFJeaFRmAlnbrpjcXULmcScEWOSIC5kBvo5L2VIrI7jtU96aQSoCJwaV3uVV7zctVnlCDf1JbS7jyw__" },
+  { name: "Pockets", tip: "Use middle and ring fingers. Keep them aligned.", difficulty: "V4+", image: "https://private-us-east-1.manuscdn.com/sessionFile/wdjwTTmoCxr61Jk59rmcmy/sandbox/oEsNDln6sKUs5cnMWkkuxt-img-5_1770859312000_na1fn_aG9sZC1wb2NrZXRz.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvd2Rqd1RUbW9DeHI2MUprNTlybWNteS9zYW5kYm94L29Fc05EbG42c0tVczVjbk1Xa2t1eHQtaW1nLTVfMTc3MDg1OTMxMjAwMF9uYTFmbl9hRzlzWkMxd2IyTnJaWFJ6LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=plrQiZw0lsJekueEWCwZnUoujP-jNJYcsBwvpN8AgFm4IrNqVFiFbtF4ERPM2enNeFaDCj1KfA8j1ipo-ZLXQiBMNVuBCrG-v-CXK5QLoOzW6g4C0-iaeeKW876ed-3t6z2XG-wKS7BWspZU2bgg585Npz6vn1x9M14cdirYc0hz~d~BQMr2~gxIll-REdvVd-wxVxC0CKs0M-1YFhoKgzLLh1EADn1dRWnjktvpnU~J9Y61Sis1lhsCuPEk64KG1RxIQiQc0cEblSpY~QIjzHvGzjVejaTtSfouNFpatI8TvLK8SovwH~US3-EPcQRGcI4KdbFuAXjYeYw9hdlFHw__" },
+  { name: "Volumes", tip: "Use smearing with palms and feet on flat sides.", difficulty: "V2+", image: "https://private-us-east-1.manuscdn.com/sessionFile/wdjwTTmoCxr61Jk59rmcmy/sandbox/cgdmcKWfl6HbPtHb8Si1hp-img-1_1770859371000_na1fn_aG9sZC12b2x1bWVz.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvd2Rqd1RUbW9DeHI2MUprNTlybWNteS9zYW5kYm94L2NnZG1jS1dmbDZIYlB0SGI4U2kxaHAtaW1nLTFfMTc3MDg1OTM3MTAwMF9uYTFmbl9hRzlzWkMxMmIyeDFiV1Z6LnBuZz94LW9zcy1wcm9jZXNzPWltYWdlL3Jlc2l6ZSx3XzE5MjAsaF8xOTIwL2Zvcm1hdCx3ZWJwL3F1YWxpdHkscV84MCIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc5ODc2MTYwMH19fV19&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=UTYAB8oY97zpBb4JvOEP8RjihsGdz1PTj0O6w8I5gglWJw3HXjJOrthDJz4dQOCJc~fdLjJQyo5Dj~VDxcMEwaljH6Fqyug-Rcn1uZt7MNKkG~6W2yK4Xr-qyPAbv2ekf4-TAAUZd5K96BhpvBB3qmSsCNWzCjMFoWOVqeSbHe6syNFpx4w7wCmpLPAzIYWx522d55fxzQEAZCFZCWzlTefXtw7twzaAHJuXnHUliwTCmqUMkxypt0RWwhGUDCT5gIn6zQW0E2SVbuItSKpPKx2AgebXeIyec-Zwq2ZzBQL7x5M9L4aIdQ8r41-mNLIZ-X2SUfwUhC2bK4GbdR-lPg__" },
 ];
 
 const movementSkills = [
@@ -143,20 +143,28 @@ export default function Tips() {
               Handhold Types
             </h2>
           </div>
-          <div className="grid gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {holdTypes.map((hold, i) => (
               <div
                 key={i}
-                className="bg-card border border-border/50 rounded-lg p-3 border-l-[3px] border-l-orange flex items-start gap-3"
+                className="bg-card border border-border/50 rounded-lg overflow-hidden group"
               >
-                <div className="flex-1">
-                  <div className="flex items-center gap-2">
-                    <h3 className="font-display font-semibold text-sm text-foreground">
-                      {hold.name}
-                    </h3>
-                    <span className="font-mono text-[10px] text-muted-foreground">{hold.difficulty}</span>
+                <div className="aspect-square relative overflow-hidden">
+                  <img
+                    src={hold.image}
+                    alt={`${hold.name} grip technique`}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-2 right-2 bg-background/80 backdrop-blur-sm px-1.5 py-0.5 rounded text-[10px] font-mono text-orange">
+                    {hold.difficulty}
                   </div>
-                  <p className="text-xs text-foreground/70 mt-1">{hold.tip}</p>
+                </div>
+                <div className="p-3 border-t border-border/50">
+                  <h3 className="font-display font-semibold text-sm text-foreground">
+                    {hold.name}
+                  </h3>
+                  <p className="text-xs text-foreground/70 mt-1 leading-relaxed">{hold.tip}</p>
                 </div>
               </div>
             ))}
