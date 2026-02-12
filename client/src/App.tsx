@@ -1,37 +1,44 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
-
+import WarmUp from "./pages/WarmUp";
+import Drills from "./pages/Drills";
+import DrillDetail from "./pages/DrillDetail";
+import Frameworks from "./pages/Frameworks";
+import FrameworkDetail from "./pages/FrameworkDetail";
+import Mindset from "./pages/Mindset";
+import Tips from "./pages/Tips";
 
 function Router() {
   return (
     <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
+      <Route path="/" component={Home} />
+      <Route path="/warmup" component={WarmUp} />
+      <Route path="/drills" component={Drills} />
+      <Route path="/drills/:id" component={DrillDetail} />
+      <Route path="/frameworks" component={Frameworks} />
+      <Route path="/frameworks/:id" component={FrameworkDetail} />
+      <Route path="/mindset" component={Mindset} />
+      <Route path="/tips" component={Tips} />
+      <Route>
+        <div className="min-h-screen flex items-center justify-center">
+          <p className="text-muted-foreground">Page not found</p>
+        </div>
+      </Route>
     </Switch>
   );
 }
 
-// NOTE: About Theme
-// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
-//   to keep consistent foreground/background color across components
-// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
-
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider
-        defaultTheme="light"
-        // switchable
-      >
+      <ThemeProvider defaultTheme="dark">
         <TooltipProvider>
           <Toaster />
+          <div className="grain-overlay" />
           <Router />
         </TooltipProvider>
       </ThemeProvider>
