@@ -1,6 +1,6 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { Route, Switch, useLocation } from "wouter";
+import { Route, Switch, useLocation, Router as WouterRouter } from "wouter";
 import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
@@ -41,17 +41,21 @@ function Router() {
   );
 }
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '') || '';
+
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark">
-        <TooltipProvider>
-          <Toaster />
-          <div className="grain-overlay" />
-          <ScrollToTop />
-          <Router />
-        </TooltipProvider>
-      </ThemeProvider>
+      <WouterRouter base={base}>
+        <ThemeProvider defaultTheme="dark">
+          <TooltipProvider>
+            <Toaster />
+            <div className="grain-overlay" />
+            <ScrollToTop />
+            <Router />
+          </TooltipProvider>
+        </ThemeProvider>
+      </WouterRouter>
     </ErrorBoundary>
   );
 }
