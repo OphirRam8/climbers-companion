@@ -12,11 +12,11 @@ import { Link, useLocation } from "wouter";
 import { motion } from "framer-motion";
 import {
   Flame,
-  Dumbbell,
   LayoutGrid,
   Brain,
   Lightbulb,
   BookOpen,
+  Archive,
 } from "lucide-react";
 
 interface LayoutProps {
@@ -25,7 +25,7 @@ interface LayoutProps {
 
 const navItems = [
   { path: "/warmup", label: "Warm-Up", icon: Flame },
-  { path: "/drills", label: "Drills", icon: Dumbbell },
+  { path: "/vault", label: "Vault", icon: Archive },
   { path: "/frameworks", label: "Frameworks", icon: LayoutGrid },
   { path: "/mindset", label: "Mindset", icon: Brain },
   { path: "/tips", label: "Tips", icon: Lightbulb },

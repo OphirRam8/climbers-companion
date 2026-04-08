@@ -6,8 +6,8 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import WarmUp from "./pages/WarmUp";
-import Drills from "./pages/Drills";
-import DrillDetail from "./pages/DrillDetail";
+import Vault from "./pages/Vault";
+import VaultDetail from "./pages/VaultDetail";
 import Frameworks from "./pages/Frameworks";
 import FrameworkDetail from "./pages/FrameworkDetail";
 import Mindset from "./pages/Mindset";
@@ -26,8 +26,8 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/warmup" component={WarmUp} />
-      <Route path="/drills" component={Drills} />
-      <Route path="/drills/:id" component={DrillDetail} />
+      <Route path="/vault" component={Vault} />
+      <Route path="/vault/:id" component={VaultDetail} />
       <Route path="/frameworks" component={Frameworks} />
       <Route path="/frameworks/:id" component={FrameworkDetail} />
       <Route path="/mindset" component={Mindset} />

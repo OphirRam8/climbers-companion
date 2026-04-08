@@ -3,7 +3,9 @@ export type DrillCategory = "technique" | "strength" | "footwork" | "mindset" | 
 export interface Drill {
   id: string;
   name: string;
+  type: "drill";
   category: DrillCategory;
+  level: string;
   focus: string;
   difficulty: "beginner" | "intermediate" | "advanced";
   description: string;
@@ -20,7 +22,9 @@ export const drills: Drill[] = [
   {
     id: "silent-feet",
     name: "Silent Feet",
+    type: "drill",
     category: "footwork",
+    level: "Beginner (V0-V2)",
     focus: "Precision and core tension",
     difficulty: "beginner",
     description:
@@ -50,7 +54,9 @@ export const drills: Drill[] = [
   {
     id: "hover-hands",
     name: "Hover Hands",
+    type: "drill",
     category: "technique",
+    level: "Intermediate (V3-V5)",
     focus: "Core strength and body positioning",
     difficulty: "intermediate",
     description:
@@ -79,7 +85,9 @@ export const drills: Drill[] = [
   {
     id: "sticky-hands",
     name: "Sticky Hands",
+    type: "drill",
     category: "technique",
+    level: "Beginner (V0-V2)",
     focus: "Commitment and hold reading",
     difficulty: "beginner",
     description:
@@ -109,7 +117,9 @@ export const drills: Drill[] = [
   {
     id: "high-low-repeats",
     name: "High-Low Repeats",
+    type: "drill",
     category: "technique",
+    level: "Intermediate (V3-V5)",
     focus: "Hip positioning and versatility",
     difficulty: "intermediate",
     description:
@@ -135,7 +145,9 @@ export const drills: Drill[] = [
   {
     id: "lock-off",
     name: "Lock-Off Drill",
+    type: "drill",
     category: "strength",
+    level: "Intermediate (V3-V5)",
     focus: "Lock-off strength and static power",
     difficulty: "intermediate",
     description:
@@ -162,7 +174,9 @@ export const drills: Drill[] = [
   {
     id: "dead-stops",
     name: "Dead Stops",
+    type: "drill",
     category: "technique",
+    level: "Advanced (V6+)",
     focus: "Body tension and dynamic control",
     difficulty: "advanced",
     description:
@@ -190,7 +204,9 @@ export const drills: Drill[] = [
   {
     id: "three-second-hover",
     name: "3-Second Hover",
+    type: "drill",
     category: "technique",
+    level: "Intermediate (V3-V5)",
     focus: "Core tension and stability",
     difficulty: "intermediate",
     description:
@@ -217,7 +233,9 @@ export const drills: Drill[] = [
   {
     id: "straight-arm-climbing",
     name: "Straight Arm Climbing",
+    type: "drill",
     category: "technique",
+    level: "Beginner (V0-V2)",
     focus: "Body positioning and energy conservation",
     difficulty: "beginner",
     description:
@@ -247,7 +265,9 @@ export const drills: Drill[] = [
   {
     id: "blink-drill",
     name: "Blink Drill",
+    type: "drill",
     category: "footwork",
+    level: "Advanced (V6+)",
     focus: "Kinesthetic awareness and proprioception",
     difficulty: "advanced",
     description:
@@ -275,7 +295,9 @@ export const drills: Drill[] = [
   {
     id: "slovenian-game",
     name: "Slovenian Team Game",
+    type: "drill",
     category: "technique",
+    level: "Advanced (V6+)",
     focus: "Body awareness and creative problem-solving",
     difficulty: "advanced",
     description:
@@ -302,7 +324,9 @@ export const drills: Drill[] = [
   {
     id: "4x4s",
     name: "4x4s",
+    type: "drill",
     category: "endurance",
+    level: "Intermediate (V3-V5)",
     focus: "Power-endurance and pump tolerance",
     difficulty: "intermediate",
     description:
@@ -329,7 +353,9 @@ export const drills: Drill[] = [
   {
     id: "visualization-practice",
     name: "Visualization Practice",
+    type: "drill",
     category: "mindset",
+    level: "Beginner (V0-V2)",
     focus: "Mental rehearsal and route reading",
     difficulty: "beginner",
     description:

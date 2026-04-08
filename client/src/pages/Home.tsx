@@ -30,10 +30,10 @@ const sections = [
     accent: "border-l-orange",
   },
   {
-    path: "/drills",
+    path: "/vault",
     icon: Dumbbell,
-    title: "Drill Library",
-    description: "12 elite drills for technique, strength, and footwork",
+    title: "The Vault",
+    description: "18 techniques + 12 drills for every climbing level",
     accent: "border-l-orange",
   },
   {
