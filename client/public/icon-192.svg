@@ -1,19 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
-  <!-- Full background fill - no rounded corners for home screen -->
+  <!-- Full dark background -->
   <rect width="192" height="192" fill="#1a1714"/>
-  <!-- Mountain -->
-  <polygon points="96,36 148,136 44,136" fill="none" stroke="#e8550f" stroke-width="5" stroke-linejoin="round"/>
-  <!-- Snow cap accent -->
-  <polygon points="96,36 110,64 82,64" fill="#e8550f" opacity="0.25"/>
-  <!-- Climber figure -->
-  <circle cx="90" cy="78" r="5" fill="#f5f0e8"/>
-  <line x1="90" y1="83" x2="90" y2="98" stroke="#f5f0e8" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="90" y1="88" x2="82" y2="82" stroke="#f5f0e8" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="90" y1="88" x2="98" y2="84" stroke="#f5f0e8" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="90" y1="98" x2="84" y2="108" stroke="#f5f0e8" stroke-width="2.5" stroke-linecap="round"/>
-  <line x1="90" y1="98" x2="96" y2="108" stroke="#f5f0e8" stroke-width="2.5" stroke-linecap="round"/>
-  <!-- Rope -->
-  <path d="M82,82 Q74,68 80,54 Q86,42 96,38" fill="none" stroke="#e8550f" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
-  <!-- Text -->
-  <text x="96" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#f5f0e8" letter-spacing="2">CLIMB</text>
+  <!-- Inner rounded border -->
+  <rect x="12" y="12" width="168" height="168" rx="28" fill="none" stroke="#e8550f" stroke-width="3" opacity="0.5"/>
+  <!-- Mountain shape - bold, simple, like the reference -->
+  <path d="M46,130 L80,62 L96,88 L112,62 L146,130 Z" fill="none" stroke="#e8550f" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+  <!-- Inner mountain fill - subtle -->
+  <path d="M46,130 L80,62 L96,88 L112,62 L146,130 Z" fill="#e8550f" opacity="0.15"/>
 </svg>
